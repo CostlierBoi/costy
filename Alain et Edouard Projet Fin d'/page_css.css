@@ -1,0 +1,201 @@
+body {
+  --s: 25vmin;
+  --p: calc(var(--s) / 2);
+  --c1: pink;
+  --c2: dodgerblue;
+  --c3: white;
+  --bg: var(--c3);
+  --d: 4000ms;
+  --e: cubic-bezier(0.76, 0, 0.24, 1);
+  
+  background-color: var(--bg);
+  background-image:
+    linear-gradient(45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(-45deg, var(--c1) 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, var(--c2) 75%),
+    linear-gradient(-45deg, transparent 75%, var(--c2) 75%);
+  background-size: var(--s) var(--s);
+  background-position: 
+    calc(var(--p) *  1) calc(var(--p) *  0), 
+    calc(var(--p) * -1) calc(var(--p) *  1), 
+    calc(var(--p) *  1) calc(var(--p) * -1), 
+    calc(var(--p) * -1) calc(var(--p) *  0);
+  animation: 
+    color var(--d) var(--e) infinite,
+    position var(--d) var(--e) infinite;
+}
+
+@keyframes color {
+  0%, 25% {
+    --bg: var(--c3);
+  }
+  26%, 50% {
+    --bg: var(--c1);
+  }
+  51%, 75% {
+    --bg: var(--c3);
+  }
+  76%, 100% {
+    --bg: var(--c2);
+  }
+}
+
+@keyframes position {
+  0% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  0), 
+      calc(var(--p) * -1) calc(var(--p) *  1), 
+      calc(var(--p) *  1) calc(var(--p) * -1), 
+      calc(var(--p) * -1) calc(var(--p) *  0);
+  }
+  25% {
+    background-position: 
+      calc(var(--p) *  1) calc(var(--p) *  4), 
+      calc(var(--p) * -1) calc(var(--p) *  5), 
+      calc(var(--p) *  1) calc(var(--p) *  3), 
+      calc(var(--p) * -1) calc(var(--p) *  4);
+  }
+  50% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 8), 
+      calc(var(--p) * -3) calc(var(--p) * 9), 
+      calc(var(--p) *  2) calc(var(--p) * 7), 
+      calc(var(--p) * -2) calc(var(--p) * 8);
+  }
+  75% {
+    background-position: 
+      calc(var(--p) *  3) calc(var(--p) * 12), 
+      calc(var(--p) * -3) calc(var(--p) * 13), 
+      calc(var(--p) *  2) calc(var(--p) * 11), 
+      calc(var(--p) * -2) calc(var(--p) * 12);
+  }
+  100% {    
+    background-position: 
+      calc(var(--p) *  5) calc(var(--p) * 16), 
+      calc(var(--p) * -5) calc(var(--p) * 17), 
+      calc(var(--p) *  5) calc(var(--p) * 15), 
+      calc(var(--p) * -5) calc(var(--p) * 16);
+  }
+}
+
+@media (prefers-reduced-motion) {
+  body {
+    animation: none;
+  }
+}
+
+
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+  font-family : Arial
+}
+
+
+li a { 
+
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration : none
+
+ 
+}
+
+li a:hover {
+  background-color: #006400;
+}
+footer{
+  border:1.5px solid black;
+  background-image: url(https://media.istockphoto.com/photos/luxury-glossy-metalic-background-picture-id1289725891?b=1&k=20&m=1289725891&s=170667a&w=0&h=OFNyi-UWox02clVKJNz-tJkbSjOqNAwQiZatjUVaVBY=);
+  font-size: 100%;
+}
+h1 {
+font-size: 70px;
+font-weight: 600;
+background-image: url(https://videohive.img.customer.envatousercontent.com/files/198398708/590x332.jpg?auto=compress%2Cformat&fit=crop&crop=top&max-h=8000&max-w=590&s=a9e6441813aa4af1b5ab3fe32001ffef);
+background-size: 250px;
+background-repeat: repeat;
+color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+}
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+h2 {
+font-size: 35px;
+font-weight: 15;
+font-family: 'Roboto', sans-serif;
+background-image: url(https://img.freepik.com/fotos-kostenlos/alter-weinlesebraun-holzhintergrund_23-2148327733.jpg?w=2000);
+background-size: 250px;
+background-repeat: repeat;
+ color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+
+
+           
+}
+h3 {
+font-size: 35px;
+font-weight: 15;
+font-family: 'Comic Sans', cursive;
+background-image: url(https://likeastorm.com/wp-content/uploads/2016/06/grunge-metal-background.jpg);
+background-size: 250px;
+background-repeat: repeat;
+ color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+
+
+           
+}
+
+h4 {
+font-size: 35px;
+font-weight: 15;
+font-family: 'Marker Felt', fantasy;
+background-image: url(https://besthqwallpapers.com/Uploads/13-8-2020/139554/thumb2-golden-textures-4k-polished-metal-plate-metal-textures-golden-metal-background.jpg);
+background-size: 250px;
+background-repeat: repeat;
+ color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+
+
+           
+}
+h5 {
+font-size: 35px;
+font-weight: 15;
+font-family: 'Marker Felt', fantasy;
+background-image: url(https://besthqwallpapers.com/Uploads/13-8-2020/139554/thumb2-golden-textures-4k-polished-metal-plate-metal-textures-golden-metal-background.jpg);
+background-size: 250px;
+background-repeat: repeat;
+ color: transparent;
+-webkit-background-clip: text;
+background-clip: text;
+
+}
+.pyphoto  {
+  width: 250px;
+  height: 150px;
+  transition: width 2s, height 4s;
+
+  
+}
+
+.pyphoto:hover {
+  width: 400px;
+  height: 250px;
+  background-size: 100%;
+}
